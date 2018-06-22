@@ -1,6 +1,7 @@
 package com.kole;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Album {
     private String name;
@@ -28,9 +29,15 @@ public class Album {
         }
     }
 
-    private Song returnSong(){
+    public boolean addToPlaylist(String songName, LinkedList<Song> playList){
+        if (returnSong(songName)==null){
+            playList.add()
+        }
+    }
+
+    private Song returnSong(String songName){
         for (Song tempSong: this.songs){
-            if (tempSong.getName().equals(name)){
+            if (tempSong.getName().equals(songName)){
                 return tempSong;
             }
         }return null;

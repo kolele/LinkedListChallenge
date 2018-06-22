@@ -2,9 +2,9 @@ package com.kole;
 
 public class Song {
     private String name;
-    private int duration;
+    private double duration;
 
-    public Song(String name, int duration) {
+    public Song(String name, double duration) {
         this.name = name;
         this.duration = duration;
     }
@@ -13,7 +13,12 @@ public class Song {
         return name;
     }
 
-    public int getDuration() {
+    public double getDuration() {
         return duration;
+    }
+
+    @Override
+    public String toString() {
+        return this.name + ": " + this.duration;
     }
 }

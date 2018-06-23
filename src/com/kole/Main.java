@@ -10,7 +10,7 @@ public class Main {
         LinkedList<Song> playList = new LinkedList<Song>();
         Album rideTheLightning = new Album("Ride the Lightning");
         rideTheLightning.addSongToAlbum("Whiplash", 12.55);
-        rideTheLightning.addToPlaylist("Whiplash", 15.48,playList);
+        rideTheLightning.addToPlaylist("Whiplash", playList);
 
     }
 

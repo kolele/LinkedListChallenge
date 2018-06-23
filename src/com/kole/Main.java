@@ -8,7 +8,9 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Album> albums = new ArrayList<Album>();
         LinkedList<Song> playList = new LinkedList<Song>();
-        playList.add(new Song("Kole", 12));
+        Album rideTheLightning = new Album("Ride the Lightning");
+        rideTheLightning.addSongToAlbum("Whiplash", 12.55);
+        rideTheLightning.addToPlaylist("Whiplash", 15.48,playList);
 
     }
 

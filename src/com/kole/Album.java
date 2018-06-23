@@ -29,10 +29,13 @@ public class Album {
         }
     }
 
-    public boolean addToPlaylist(String songName, LinkedList<Song> playList){
+    public boolean addToPlaylist(String songName,double songDuration, LinkedList<Song> playList){
         if (returnSong(songName)==null){
-            playList.add()
-        }
+            playList.add(new Song(songName,songDuration ));
+            return true;
+        }else {
+            System.out.println("Song is already on the Playlist");
+        }return false;
     }
 
     private Song returnSong(String songName){
